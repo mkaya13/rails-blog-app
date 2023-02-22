@@ -1,0 +1,5 @@
+bundle install
+rails db:create
+rails server
+rails migrate
+
