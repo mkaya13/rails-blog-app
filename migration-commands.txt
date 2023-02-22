@@ -1,0 +1,7 @@
+rails generate migration CreateUser name:string photo:string bio:string posts_counter:integer
+rails generate migration CreatePost user:references title:string text:string comments_counter:integer likes_counter:integer
+rails generate migration CreateLike user:references post:references
+rails generate migration CreateComment user:references post:references text:string
+
+
+add index feature for foreign keys!
