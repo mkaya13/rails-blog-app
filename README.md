@@ -225,9 +225,11 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[A method that returns the 3 most recent posts for a given user.]**
+- [ ] **[A method that updates the posts counter for a user.]**
+- [ ] **[A method which returns the 5 most recent comments for a given post.]**
+- [ ] **[A method that updates the comments counter for a post.]**
+- [ ] **[A method that updates the likes counter for a post.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
