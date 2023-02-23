@@ -17,4 +17,5 @@ RSpec.describe Comment, type: :model do
     subject.comments.create!(user: user, text: 'wow man')
 
     expect(subject.comments_counter).to eql 2
+  end
 end

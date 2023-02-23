@@ -5,8 +5,7 @@ RSpec.describe User, type: :model do
 
   subject do
     user = User.new(name: 'Tom', photo: 'image.png', bio: 'I am programmer', posts_counter: 0)
-    Post.new(title: 'Hello world', text: 'Helloworld',
-             likes_counter: 0, comments_counter: 0, user: user)
+    Post.new(title: 'Hello world', text: 'Helloworld', likes_counter: 0, comments_counter: 0, user: user)
   end
 
   before { subject.save }
