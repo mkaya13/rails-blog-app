@@ -32,8 +32,6 @@ RSpec.describe Post, type: :model do
     user = User.new(name: 'Tom', photo: 'image.png', bio: 'I am programer', posts_counter: 0)
     comment1 = subject.comments.create!(user: user, text: 'hi')
     comment2 = subject.comments.create!(user: user, text: 'hi')
-
-
     comments = subject.return_five_comments
     expect(comments.length).to eql 2
     expect(comments).to match_array([comment1, comment2])
