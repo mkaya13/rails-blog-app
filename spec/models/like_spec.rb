@@ -4,7 +4,7 @@ RSpec.describe Like, type: :model do
   subject do
     user = User.new(name: 'Tom', photo: 'gama.png', bio: 'I am a decent person', posts_counter: 0)
     Post.new(title: 'Wow', text: 'Hello moto',
-             likes_counter: 0, comments_counter: 0, user_id: user.id)
+             likes_counter: 0, comments_counter: 0, user:)
   end
 
   user = User.new(name: 'Tom', photo: 'gama.png', bio: 'I am a decent person', posts_counter: 0)

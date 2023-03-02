@@ -1,1 +1,6 @@
-<div> This is users/user_id/posts </div>
+<div>This is users/:user_id/posts page</div>
+<% @posts.each do |post|%>
+<div class="posts">
+    <%= post.title %>
+</div>
+<% end %>
