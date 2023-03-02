@@ -10,6 +10,8 @@ class PostsController < ApplicationController
     # @posts = @user.posts
     # @post = @posts.find_by(id: params[:post_id])
     @post = Post.find_by(user_id: post_params[:user_id], id: params[:post_id])
+    @comments = @post.comments
+    @user = User.find(@post.user_id)
   end
 
   def post_params
