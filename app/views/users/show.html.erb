@@ -1,1 +1,10 @@
-<h1>USER: <%=@user&.name%></h1>
+<%= render "shared/users", user: @user %>
+<section class="user_bio">
+  <h3>Bio</h3>
+  <p><%= @user.bio %></p>
+</section>
+<section>
+  <% @posts.each do |post| %>
+    <%= render "shared/posts", post: post, user: @user %>
+  <% end %>
+</section>

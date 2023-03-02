@@ -205,7 +205,8 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please show your support me by giving me a like, following me in github.
+Also feel free to take a look at Microverse website and let me thank them for recommending this project to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,7 +216,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Microverse team for adding this project on their program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +241,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/mkaya13/rails-blog-app/blob/dev/MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

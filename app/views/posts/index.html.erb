@@ -1,6 +1,17 @@
-<div>This is users/:user_id/posts page</div>
-<% @posts.each do |post|%>
-<div class="posts">
-    <%= post.title %>
-</div>
-<% end %>
+<%= render "users", user: @user %>
+<section>
+  <% @posts.each do |post| %>
+    <%= render "shared/post_link", post: post['post'], user: @user %>
+    <div class="post_comments">
+      <% post['comments'].each do |comment| %>
+        <p>
+          <span><%= comment['name'] %></span>:
+          <span><%= comment['text'] %></span>
+        </p>
+      <% end %>
+      <% if post['comments'].length == 0 %>
+        <p>No comments yet</p>
+      <% end %>
+    </div>
+  <% end %>
+</section>

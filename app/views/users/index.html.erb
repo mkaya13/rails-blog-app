@@ -1,6 +1,5 @@
-<div>This is users index page</div>
-<% @users.each do |user|%>
-<div class="users">
-    <%= user.name %>
-</div>
-<% end %>
+<section>
+  <% @users.each do |user| %>
+    <%= render "shared/users", user: user %>
+  <% end %>
+</section>
