@@ -19,4 +19,11 @@ class CommentsController < ApplicationController
     end
     redirect_to "/users/#{user_id}/posts/#{post_id}"
   end
+
+  def new
+    @user_id = current_user.id
+    @post_id = params[:id]
+
+    render 'new'
+  end
 end
