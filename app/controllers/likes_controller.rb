@@ -8,7 +8,6 @@ class LikesController < ApplicationController
     like = Like.new(user: current_user, post: Post.find(post_id))
     post.increment!(:likes_counter)
 
-
     if like.save
       flash[:success] = 'New Like Saved successfully'
     else
