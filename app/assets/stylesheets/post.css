@@ -13,3 +13,15 @@
   top: 5px;
   right: 10px;
 }
+
+form {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+form textarea {
+  width: 20rem;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+}

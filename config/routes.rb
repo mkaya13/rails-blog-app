@@ -8,5 +8,10 @@ Rails.application.routes.draw do
   get "users/:id", to: "users#show", as: 'user'
   get "users/:user_id/posts", to: "posts#index"
   get "users/:user_id/posts/:post_id", to: "posts#show"
+  # Send post and likes
+  get "/users/:user_id/posts/new", to: "posts#new"
+  post "/users/:user_id/posts", to: "posts#create"
+  post "/users/:user_id/posts/:id/comments", to: "comments#create"
+  post "/users/:user_id/posts/:id/likes", to: 'likes#create'
 
 end
