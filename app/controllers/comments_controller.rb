@@ -3,12 +3,12 @@ class CommentsController < ApplicationController
     text = params[:comment]['text']
     post_id = params[:id]
     user_id = params[:user_id]
-    comment = Comment.new(user: current_user, post: Post.find(post_id), text: text)
+    comment = Comment.new(user: current_user, post: Post.find(post_id), text:)
     post = Post.find_by(id: params[:id])
     puts text
     puts post_id
     puts user_id
-    puts 'Show comment count:', post.comments_counter
+    puts post.comments_counter
     # comment_count_of_current_post = post.comments_counter
     # post.comments_counter = comment_count_of_current_post + 1
     post.increment!(:comments_counter)
