@@ -11,10 +11,10 @@ second_user = User.create(name: 'Lilly', photo: 'https://img.freepik.com/premium
 
 puts first_user
 
-first_post = Post.create(user_id: first_user.id, title: '1', text: 'asdfsafsa')
-second_post = Post.create(user: first_user, title: '2', text: 'asdfsafsa')
-third_post = Post.create(user: second_user, title: '3', text: 'asdfasfsafsa')
-forth_post = Post.create(user: second_user, title: '4', text: 'asdfasfashkfasbfhksa')
+first_post = Post.create(user_id: first_user.id, title: 'Case Study', text: 'asdfsafsa')
+second_post = Post.create(user: first_user, title: 'Sun', text: 'asdfsafsa')
+third_post = Post.create(user: second_user, title: 'Moon', text: 'asdfasfsafsa')
+forth_post = Post.create(user: second_user, title: 'Glass', text: 'asdfasfashkfasbfhksa')
 
 Comment.create(post: first_post, user: first_user, text: 'Hi Tom!' )
 Comment.create(post: second_post, user: first_user, text: 'Wassup!' )

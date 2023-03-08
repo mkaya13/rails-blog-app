@@ -5,3 +5,8 @@
   padding: 15px;
   margin-bottom: 40px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

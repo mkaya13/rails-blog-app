@@ -1,10 +1,10 @@
 class CommentsController < ApplicationController
   def create
     text = params[:comment]['text']
-    post_id = params[:id]
+    post_id = params[:post_id]
     user_id = params[:user_id]
-    comment = Comment.new(user: current_user, post: Post.find(post_id), text:)
-    post = Post.find_by(id: params[:id])
+    post = Post.find_by(id: params[:post_id])
+    comment = Comment.new(user: current_user, post:, text:)
     puts text
     puts post_id
     puts user_id
@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
 
   def new
     @user_id = current_user.id
-    @post_id = params[:id]
+    @post_id = params[:post_id]
 
     render 'new'
   end

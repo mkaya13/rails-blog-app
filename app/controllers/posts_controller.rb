@@ -1,25 +1,30 @@
 class PostsController < ApplicationController
   def index
-    # @user = User.find_by(id: params[:user_id])
+    @user = User.find_by(id: params[:user_id])
     # @posts = @user.posts
     # @posts = Post.where(user_id: post_params[:user_id])
-    @posts = Post.where(user_id: post_params[:user_id]).includes(:comments)
+    @posts = Post.where(user_id: params[:user_id])
+    puts @posts[0].comments
   end
 
   def show
-    # @user = User.find_by(id: params[:user_id])
+    @user = User.find_by(id: params[:user_id])
     # @posts = @user.posts
     # @post = @posts.find_by(id: params[:post_id])
-    # @post = Post.find_by(user_id: post_params[:user_id], id: params[:post_id])
+    @post = Post.find_by(user_id: params[:user_id], id: params[:id])
 
-    @post = Post.find_by(user_id: params[:user_id], id: params[:post_id])
+    # @post = Post.find_by(user_id: params[:user_id],id: params[:post_id])
     @comments = @post.comments
 
-    @user = User.find(@post.user_id)
+    puts 'My posts:'
+    puts @post
+    puts '....'
+
+    # @user = User.find_by(user_id: params[:user_id])
   end
 
   def post_params
-    params.permit(:user_id, :id)
+    params.permit(:user_id, :post_id)
   end
 
   def new

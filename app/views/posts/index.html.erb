@@ -1,17 +1,24 @@
-<%= render "users", user: @user %>
 <section>
+  <%= render "shared/users", user: @user %>
   <% @posts.each do |post| %>
-    <%= render "shared/post_link", post: post['post'], user: @user %>
+    <a href=<%= "posts/#{post.id}" %>>
+    <h2><%= post.title %></h2>
+    <p><%= post.text %></p>
+    <p>Comments No: <%= post.comments.length %></p>
+    <p>Likes No: <%= post.likes.length %></p>
+    
     <div class="post_comments">
-      <% post['comments'].each do |comment| %>
+      <% post.comments.each do |comment| %>
         <p>
-          <span><%= comment['name'] %></span>:
+          <span><%= comment.user.name %></span>:
           <span><%= comment['text'] %></span>
         </p>
       <% end %>
-      <% if post['comments'].length == 0 %>
+      <% if post.comments.length == 0 %>
         <p>No comments yet</p>
       <% end %>
     </div>
+    </a>
   <% end %>
 </section>
+<div>Pagination</div>
