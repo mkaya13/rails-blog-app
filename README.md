@@ -169,9 +169,9 @@ You can deploy this project using:
 
 👤 **Mert Kaya**
 
-- GitHub: [@mkaya13](https://github.com/githubhandle)
-- Twitter: [@mkaya133](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mert-kaya-0732b717b/)
+- GitHub: [@mkaya13](https://github.com/mkaya13)
+- Twitter: [@mkaya133](https://twitter.com/mkaya133)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mkaya13/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

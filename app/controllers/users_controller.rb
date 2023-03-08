@@ -4,6 +4,11 @@ class UsersController < ApplicationController
   layout 'application'
   def index
     @users = User.all
+    # @users = User.all.includes(:posts, :comments)
+
+    # SELECT * FROM users
+    # SELECT * FROM posts WHERE user_id = id
+    # SELECT * FROM comments WHERE user_id = id
   end
 
   def show
