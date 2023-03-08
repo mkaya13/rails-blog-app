@@ -5,7 +5,6 @@ class CommentsController < ApplicationController
     user_id = params[:user_id]
     post = Post.find_by(id: params[:post_id])
     comment = Comment.new(user: current_user, post:, text:)
-    
     post.increment!(:comments_counter)
     if comment.save
       flash[:success] = 'Comment saved successfully'
