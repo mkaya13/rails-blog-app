@@ -9,8 +9,7 @@ class CommentsController < ApplicationController
     puts post_id
     puts user_id
     puts post.comments_counter
-    # comment_count_of_current_post = post.comments_counter
-    # post.comments_counter = comment_count_of_current_post + 1
+
     post.increment!(:comments_counter)
     if comment.save
       flash[:success] = 'Comment saved successfully'
