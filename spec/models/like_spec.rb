@@ -9,8 +9,6 @@ RSpec.describe Like, type: :model do
 
   user = User.new(name: 'Tom', photo: 'gama.png', bio: 'I am a decent person', posts_counter: 0)
 
-  before { user.save }
-
   it 'should return most recent comments' do
     user.likes.create!(post: subject)
     user.likes.create!(post: subject)

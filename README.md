@@ -165,13 +165,19 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 
-## 👤 Author <a name="authors"></a>
+## 👤👤 Authors <a name="authors"></a>
 
 👤 **Mert Kaya**
 
-- GitHub: [@mkaya13](https://github.com/githubhandle)
-- Twitter: [@mkaya133](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mert-kaya-0732b717b/)
+- GitHub: [@mkaya13](https://github.com/mkaya13)
+- Twitter: [@mkaya133](https://twitter.com/mkaya133)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mkaya13/)
+
+👤 **Wassim Chakib**
+
+- GitHub: [@wassimchakib](https://github.com/wassimchakib)
+- Twitter: [@wassim_chakib](https://twitter.com/wassim_chakib)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/wassimchakib/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

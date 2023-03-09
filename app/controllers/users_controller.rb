@@ -3,7 +3,7 @@
 class UsersController < ApplicationController
   layout 'application'
   def index
-    @users = User.all
+    @users = User.includes(:posts)
   end
 
   def show

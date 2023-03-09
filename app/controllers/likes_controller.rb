@@ -2,8 +2,8 @@ class LikesController < ApplicationController
   def create
     puts params
     user_id = params[:user_id]
-    post_id = params[:id]
-    post = Post.find_by(id: params[:id])
+    post_id = params[:post_id]
+    post = Post.find_by(id: params[:post_id])
 
     like = Like.new(user: current_user, post: Post.find(post_id))
     post.increment!(:likes_counter)

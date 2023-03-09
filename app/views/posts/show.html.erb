@@ -1,6 +1,7 @@
+<%= render "shared/users", user: @user %>
 <section class="post_content">
   <h3>
-    <span>Post_id: <%= @post.id %> <%= @post.title %> by</span>
+    <span><%= @post.title %> by</span>
     <a href=<%= "/users/#{@user.id}" %>><%= @user.name %></a>
   </h3>
 
@@ -21,7 +22,7 @@
 <section class="content_comments">
   <% @comments.each do |comment| %>
     <p>
-      <span><%= comment['name'] %></span>:
+      <span><%= comment.user.name %></span>:
       <span><%= comment['text'] %></span>
     </p>
   <% end %>
