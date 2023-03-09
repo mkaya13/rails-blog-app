@@ -1,12 +1,20 @@
 <section>
   <%= render "shared/users", user: @user %>
+  <div class="my_all_posts">
   <% @posts.each do |post| %>
+    <div class="each_post_info">
     <a href=<%= "posts/#{post.id}" %>>
     <h2><%= post.title %></h2>
     <p><%= post.text %></p>
-    <p>Comments No: <%= post.comments.length %></p>
-    <p>Likes No: <%= post.likes.length %></p>
+    <div class="comments_no"> 
+    <p><h3>Comments No: </h3><%= post.comments.length %></p>
+    </div>
+
+    <div class="likes_no"> 
+    <p><h3>Likes No: </h3><%= post.likes.length %></p>
+    </div>
     
+    <h3>Current Comments For the Post:</h3>
     <div class="post_comments">
       <% post.comments.each do |comment| %>
         <p>
@@ -19,6 +27,8 @@
       <% end %>
     </div>
     </a>
+    </div>
   <% end %>
+  </div>
 </section>
 <div>Pagination</div>

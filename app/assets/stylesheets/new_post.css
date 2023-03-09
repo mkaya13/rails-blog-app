@@ -1,14 +1,16 @@
 .new_post {
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  margin: 30px auto;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  border: 1px solid;
+  align-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: lightgreen;
 }
 
 .new_post form {
   width: 100%;
-  padding: 15px;
 }
 
 .new_post form div {
@@ -20,6 +22,7 @@
   padding: 10px;
   font-size: 17px;
   width: 80%;
+  margin: auto auto;
   border: 2px solid black;
   outline: none;
 }
@@ -30,4 +33,53 @@
 
 .new_post form button {
   cursor: pointer;
+}
+
+.view_all_posts {
+  display: flex;
+  width: 50%;
+  padding: 1rem 1rem 1rem 1rem;
+  justify-content: center;
+  border: 1px solid;
+  align-content: center;
+  align-items: center;
+  width: 10rem;
+  background-color: cyan;
+}
+
+.new_post_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.new_post_form form input,
+.new_post_form form textarea {
+  font-size: 17px;
+  width: 80%;
+  margin: auto auto;
+  border: 2px solid black;
+  outline: none;
+}
+
+.new_post_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 35%;
+}
+
+.new_post_form form textarea {
+  height: 10rem;
+}
+
+.add_post_button {
+  width: 30%;
+}
+
+.new_post_form h2 {
+  display: flex;
 }

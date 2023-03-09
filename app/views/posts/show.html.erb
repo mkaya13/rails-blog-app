@@ -10,14 +10,20 @@
   <p><%= @post.text %></p>
 </section>
 
+<div class="my-wrapper">
+
+<div class="sub-my-wrapper">
+
 <%= form_with model: @like, url: "/users/#{@user.id}/posts/#{@post.id}/likes" do |f|%>
   <%= hidden_field(:post, :id) %>
-  <div>
+  <div class="like_link">
     <%= f.submit "Add Like" %>
   </div>
 <% end %>
 
 <a class="comment_link" href=<%= "/users/#{@user.id}/posts/#{@post.id}/comments/new" %>>Add A New Comment</a>
+
+</div>
 
 <section class="content_comments">
   <% @comments.each do |comment| %>
@@ -30,3 +36,5 @@
     <p>No comments yet</p>
   <% end %>
 </section>
+
+</div>
