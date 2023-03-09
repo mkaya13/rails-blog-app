@@ -2,7 +2,6 @@ class PostsController < ApplicationController
   def index
     @user = User.find_by(id: params[:user_id])
     @posts = User.find_by(id: params[:user_id])&.posts&.includes(:comments) || []
-    puts @posts[0].comments
   end
 
   def show
@@ -10,10 +9,6 @@ class PostsController < ApplicationController
     @post = Post.find_by(user_id: params[:user_id], id: params[:id])
 
     @comments = @post.comments
-
-    puts 'My posts:'
-    puts @post
-    puts '....'
   end
 
   def post_params
