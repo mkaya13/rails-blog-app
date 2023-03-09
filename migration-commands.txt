@@ -5,3 +5,8 @@ rails generate migration CreateComment user:references post:references text:stri
 
 
 add index feature for foreign keys!
+
+
+rails generate migration add_fieldname_to_tablename fieldname:string
+
+rails generate migration add_role_to_users role:string
