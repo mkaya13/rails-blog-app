@@ -36,7 +36,7 @@ gem 'spec'
 # Devise for User Sign-Up, Sign-In
 gem 'devise'
 
-#CanCanCan for Authorization
+# CanCanCan for Authorization
 gem 'cancancan', '~> 1.9'
 
 
