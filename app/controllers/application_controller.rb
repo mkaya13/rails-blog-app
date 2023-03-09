@@ -12,7 +12,3 @@ class ApplicationController < ActionController::Base
     end
   end
 end
-
-# def current_user
-#  User.first
-# end
