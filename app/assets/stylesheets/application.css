@@ -7,3 +7,42 @@
 main {
   padding-top: 30px;
 }
+
+/* Login Page */
+.new_user {
+  width: 50%;
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.field,
+.actions {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 8px;
+}
+
+.actions input {
+  width: 100%;
+  padding: 8px;
+}
+
+.additional_info {
+  width: 80%;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.additional_info a {
+  width: 100%;
+  margin: auto;
+  padding: 0 25% 0 34%;
+}
