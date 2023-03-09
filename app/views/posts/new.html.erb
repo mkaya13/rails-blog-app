@@ -1,5 +1,6 @@
-<div class="new_post">
+<div class="new_post_form">
  <%= form_with model: @post, url: "/users/#{@id}/posts", scope: :post do |f|%>
+ <h2>Add A new Post </h2>
   <div>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -10,7 +11,7 @@
     <%= text_area :post, :text %>
   </div>
 
-  <div>
+  <div class="add_post_button">
     <%= f.submit "Add Post" %>
   </div>
 <% end %>

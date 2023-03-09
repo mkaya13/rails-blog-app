@@ -20,3 +20,64 @@
   right: 10px;
   font-size: 14px;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0 0 1rem;
+}
+
+.my_all_posts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.each_post_info a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.each_post_info h3 {
+  color: #6495ed;
+}
+
+.comments_no {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comments_no h3 {
+  color: green;
+}
+
+.comments_no h3 p {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.likes_no {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.likes_no h3 {
+  color: red;
+}
+
+.sub-my-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

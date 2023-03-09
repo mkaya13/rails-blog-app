@@ -8,4 +8,8 @@
     <%= render "shared/posts", post: post, user: @user %>
   <% end %>
 </section>
-<a href= <%= "#{@user.id}/posts" %> >View All Posts</a>
+
+<div class="posts-stuff"> 
+<a class="new_post" href=<%= "/users/#{@user.id}/posts/new" %>>Add A New Post</a>
+<a class="view_all_posts" href= <%= "#{@user.id}/posts" %> >View All Posts</a>
+</ div>
