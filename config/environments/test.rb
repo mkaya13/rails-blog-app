@@ -57,4 +57,18 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  #Mails
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = {
+  :user_name => '1c855525c3a826',
+  :password => 'a470f0bd7fc4ff',
+  :address => 'sandbox.smtp.mailtrap.io',
+  :domain => 'sandbox.smtp.mailtrap.io',
+  :port => '2525',
+  :authentication => :cram_md5
+}
 end

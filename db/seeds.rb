@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-first_user = User.create(name: 'Tom', photo: 'https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg', bio: 'Teacher from Mexico.')
-second_user = User.create(name: 'Lilly', photo: 'https://img.freepik.com/premium-vector/portrait-caucasian-woman-avatar-female-person-vector-icon-adult-flat-style-headshot_605517-26.jpg?w=2000', bio: 'Teacher from Poland.')
+first_user = User.create(name: 'Tom', photo: 'https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg', bio: 'Teacher from Mexico.', email:'tom@hotmail.com', password: "asdf21asAB")
+second_user = User.create(name: 'Lilly', photo: 'https://img.freepik.com/premium-vector/portrait-caucasian-woman-avatar-female-person-vector-icon-adult-flat-style-headshot_605517-26.jpg?w=2000', bio: 'Teacher from Poland.', email:"lilly@hotmail.com", password: "21asdf21AS")
 
 puts first_user
 
